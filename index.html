@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+<body>
+
+<div ng-app="hawkEye" ng-controller="processorController" ng-init="readTextFile()">
+ 	
+ 	
+ 	<button ng-click="readTextFile()">
+		Refresh Data-Set
+	</button>
+
+	<ul style="list-style-type: none;">
+	  <li ng-repeat="x in processors" style = "float:left;">
+	    <processor title = "{{x.name}}"  method = "processorChanged()"/><br/>
+	  </li>
+	</ul>
+	<br>
+	<ul style="list-style-type: none;">
+	  <li ng-repeat="x in acquirers" style = "float:left;">
+	    <acquirer title = "{{x}}"/><br/>
+	  </li>
+	</ul>
+	
+	
+
+
+
+</div>
+
+<script src="js/processorController.js"></script>
+
+</body>
+
+</html>

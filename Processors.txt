@@ -1,0 +1,26 @@
+[
+    {
+        "name": "Processor A",
+        "acquirers": [
+            "HSBC",
+            "WF",
+            "RBS"
+        ]
+    },
+    {
+        "name": "Processor B",
+        "acquirers": [
+            "HSBC-Omni",
+            "RBS-Omni"
+        ]
+    },
+    {
+        "name": "Processor C",
+        "acquirers": [
+            "STAR",
+            "NYCE",
+            "PULSE"
+
+        ]
+    }
+]
